@@ -22,7 +22,7 @@ public class StepDefinations {
 
 	@When("^some other action$")
 	public void some_other_action() { 
-	System.out.println("when step1");
+	System.out.println("when step2");
 	
 	}
 
