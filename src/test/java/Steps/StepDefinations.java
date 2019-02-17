@@ -53,7 +53,7 @@ public class StepDefinations {
 
 	@Then("^I verify the success in step$")
 	public void i_verify_the_success_in_step(){ 
-		System.out.println("when step1");
+		System.out.println("Then step1");
 	}
 
 	@Then("^I verify the Fail in step$")
