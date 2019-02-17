@@ -17,7 +17,7 @@ public class StepDefinations {
 
 	@When("^I complete action$")
 	public void i_complete_action() {
-		System.out.println("when step1");
+		System.out.println("when step3");
 	}
 
 	@When("^some other action$")
@@ -42,8 +42,9 @@ public class StepDefinations {
 	}
 
 	@Given("^I want to write a step with name(\\d+)$")
-	public void i_want_to_write_a_step_with_name(int arg1){ 
-		System.out.println("when step1");
+	public void i_want_to_write_a_step_with_name(int arg1){
+		int a= 2;
+		System.out.println("when step1" +a);
 	}
 
 	@When("^I check for the (\\d+) in step$")
@@ -60,4 +61,6 @@ public class StepDefinations {
 	public void i_verify_the_Fail_in_step(){ 
 		System.out.println("Then step1");
 	}
+
+
 }
