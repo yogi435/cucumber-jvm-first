@@ -7,7 +7,11 @@ import cucumber.api.java.en.When;
 public class StepDefinations {
 	@Given("^I want to write a step with precondition$")
 	public void i_want_to_write_a_step_with_precondition() {
-		System.out.println("given step1");
+            System.setProperty("webdriver.chrome.driver", "src\\test\\resources\\chromedriver.exe");
+            WebDriver driver= new ChromeDriver();
+	    driver.get("http://google.co.uk");  
+	  
+	  driver.quit();
 	}
 
 	@Given("^some other precondition$")
